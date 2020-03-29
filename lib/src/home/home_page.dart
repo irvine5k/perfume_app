@@ -21,12 +21,24 @@ class _HomePageState extends State<HomePage> {
           color: Colors.black,
         ),
         actions: <Widget>[
-          IconButton(
-            onPressed: () {},
-            icon: Icon(
-              Icons.shopping_basket,
-              color: Colors.black,
-            ),
+          Stack(
+            children: <Widget>[
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.shopping_basket,
+                  color: Colors.black,
+                ),
+              ),
+              Positioned(
+                top: 10,
+                right: 10,
+                child: CircleAvatar(
+                  backgroundColor: Color(0xFF59A05E),
+                  radius: 2,
+                ),
+              ),
+            ],
           )
         ],
       ),

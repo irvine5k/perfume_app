@@ -33,10 +33,16 @@ class TabBarWidget extends StatelessWidget {
                 fontWeight: FontWeight.w500,
               ),
             ),
-            border: Border.all(width: 1, color: Colors.grey),
+            border: Border.all(
+              width: 1,
+              color: Colors.grey.withOpacity(0.3),
+            ),
           ),
           RoundedContainerWidget(
-            border: Border.all(width: 1, color: Colors.grey),
+            border: Border.all(
+              width: 1,
+              color: Colors.grey.withOpacity(0.3),
+            ),
             padding: const EdgeInsets.symmetric(horizontal: 20),
             color: Colors.white,
             child: Text(

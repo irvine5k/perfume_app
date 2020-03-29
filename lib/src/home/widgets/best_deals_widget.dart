@@ -52,7 +52,7 @@ class BestDealsWidget extends StatelessWidget {
               color: Colors.white,
               border: Border.all(
                 width: 1,
-                color: Colors.grey.withOpacity(0.7),
+                color: Colors.grey.withOpacity(0.3),
               ),
               child: Row(
                 children: <Widget>[

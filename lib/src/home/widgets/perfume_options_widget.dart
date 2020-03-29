@@ -11,23 +11,41 @@ class PerfumeOptionsWidget extends StatelessWidget {
       children: <Widget>[
         RotatedBox(
           quarterTurns: 15,
-          child: Text(
-            'SUGGESTED',
-            style: TextStyle(
-              color: Color(0xFF59A05E),
-              fontWeight: FontWeight.w500,
-            ),
+          child: Column(
+            children: <Widget>[
+              Text(
+                'SUGGESTED',
+                style: TextStyle(
+                  color: Color(0xFF59A05E),
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 5),
+              CircleAvatar(
+                backgroundColor: Color(0xFF59A05E),
+                radius: 2,
+              ),
+            ],
           ),
         ),
         const SizedBox(height: 20),
         RotatedBox(
           quarterTurns: 15,
-          child: Text(
-            'POPULAR',
-            style: TextStyle(
-              color: Colors.grey,
-              fontWeight: FontWeight.w500,
-            ),
+          child: Column(
+            children: <Widget>[
+              Text(
+                'POPULAR',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+              const SizedBox(height: 5),
+              CircleAvatar(
+                backgroundColor: Colors.transparent,
+                radius: 2,
+              )
+            ],
           ),
         ),
       ],
