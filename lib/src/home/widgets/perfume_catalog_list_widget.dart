@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:perfume_app/src/details/details_page.dart';
 import 'package:perfume_app/src/home/widgets/rounded_container_widget.dart';
 
 class PerfumeCatalogListWidget extends StatelessWidget {
@@ -17,7 +18,14 @@ class PerfumeCatalogListWidget extends StatelessWidget {
           shrinkWrap: true,
           scrollDirection: Axis.horizontal,
           itemBuilder: (context, index) => GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsPage(),
+                ),
+              );
+            },
             child: Stack(
               children: <Widget>[
                 Column(
@@ -38,7 +46,8 @@ class PerfumeCatalogListWidget extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.all(30.0),
                         child: Image.network(
-                            'https://shopping.tallink.com/images/prod/B/E/2/2/BE22720F-B613-4826-AD0B-F715DF1E44EE_1_big.png'),
+                          'https://shopping.tallink.com/images/prod/B/E/2/2/BE22720F-B613-4826-AD0B-F715DF1E44EE_1_big.png',
+                        ),
                       ),
                     ),
                     const SizedBox(height: 10),
